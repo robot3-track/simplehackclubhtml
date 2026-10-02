@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <title>Chapter Constitution &amp; Bylaws - Hack Club Marina</title>
+    <meta name="description" content="Official ratified constitution and bylaws governing the Hack Club Marina High School Chapter, outlining student membership rights, officer duties, treasury management, and meeting procedures." />
+    <meta property="og:title" content="Chapter Constitution &amp; Bylaws - Hack Club Marina" />
+    <meta property="og:description" content="Official ratified constitution and bylaws governing the Hack Club Marina High School Chapter, outlining student membership rights, officer duties, treasury management, and meeting procedures." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#17171d] text-white antialiased selection:bg-[#ec3750] selection:text-white min-h-screen flex flex-col font-sans">
+    
+    <!-- Top-left Hack Club Flag -->
+    <a
+      href="https://hackclub.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="absolute top-0 left-4 sm:left-6 z-50 transition-transform hover:translate-y-1 block focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden"
+      title="Hack Club HQ"
+      aria-label="Hack Club Main HQ"
+    >
+      <img
+        src="/flag-orpheus-top.svg"
+        alt="Hack Club Flag"
+        class="w-20 sm:w-28 md:w-36 drop-shadow-md"
+      />
+    </a>
+
+    <!-- Header Navigation -->
+    <header class="relative z-40 bg-[#17171d] border-b border-[#252429]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pl-24 sm:pl-36 md:pl-44 py-3 sm:py-4 flex items-center justify-between">
+        
+        <!-- Brand Title -->
+        <a href="/" class="flex items-center gap-2.5 sm:gap-3 group focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden">
+          <img
+            src="/icon-square.svg"
+            alt="Hack Club Logo"
+            class="w-7 h-7 sm:w-9 sm:h-9 object-contain group-hover:scale-105 transition-transform"
+          />
+          <div class="flex flex-col">
+            <span class="font-black text-sm sm:text-lg lg:text-xl tracking-tight text-white group-hover:text-[#ec3750] transition-colors leading-none">
+              HACK CLUB <span class="text-[#ec3750]">MARINA</span>
+            </span>
+            <span class="text-xs font-semibold text-white/80 mt-0.5">
+              Marina High School Chapter
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-1.5 lg:gap-3">
+          <a
+            href="/"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors text-white/90 hover:text-[#ec3750] hover:bg-[#252429]/50 focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden"
+          >
+            About
+          </a>
+          <a
+            href="/hackathons.html"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors text-white/90 hover:text-[#38bdf8] hover:bg-[#252429]/50 focus-visible:ring-2 focus-visible:ring-[#38bdf8] focus-visible:outline-hidden"
+          >
+            NASA &amp; Hackathons
+          </a>
+          <a
+            href="/constitution.html"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors bg-[#252429] text-white border border-[#338eda]/60 focus-visible:ring-2 focus-visible:ring-[#338eda] focus-visible:outline-hidden"
+          >
+            Constitution
+          </a>
+          <a
+            href="/signup.html"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors text-white/90 hover:text-[#33d6a6] hover:bg-[#252429]/50 focus-visible:ring-2 focus-visible:ring-[#33d6a6] focus-visible:outline-hidden"
+          >
+            Join &amp; Contact
+          </a>
+        </nav>
+
+        <!-- Right Header Actions -->
+        <div class="flex items-center gap-2">
+          <button
+            onclick="window.print()"
+            class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md font-bold text-xs bg-[#252429] hover:bg-[#32303c] text-white border border-[#3c4858] transition-colors cursor-pointer"
+            title="Print Constitution Document"
+          >
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+            <span>Print PDF</span>
+          </button>
+
+          <a
+            href="/signup.html"
+            class="hidden xs:flex px-4 py-2 rounded-md font-black text-xs sm:text-sm bg-[#ec3750] hover:bg-[#d62b42] text-white transition-all shadow-md whitespace-nowrap focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden"
+          >
+            Join Chapter
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button
+            id="mobile-nav-toggle"
+            class="md:hidden p-2 rounded-md bg-[#252429] hover:bg-[#32303c] text-white border border-[#3c4858] transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden cursor-pointer"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-nav-menu" class="hidden md:hidden border-t border-[#252429] bg-[#1a1a22] px-4 py-4 space-y-2 shadow-2xl">
+        <div class="space-y-1.5">
+          <a href="/" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#252429] text-white hover:bg-[#32303c]">
+            <span>About &amp; Overview</span>
+          </a>
+          <a href="/hackathons.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#252429] text-white hover:bg-[#32303c]">
+            <span>NASA Space Apps &amp; Hackathons</span>
+          </a>
+          <a href="/constitution.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#338eda] text-white font-extrabold shadow-md">
+            <span>Chapter Constitution</span>
+          </a>
+          <a href="/signup.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#252429] text-[#33d6a6] hover:bg-[#32303c]">
+            <span>Join Chapter &amp; Group Chat</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+
+      <!-- Header & Intro -->
+      <section class="py-12 sm:py-16 bg-[#17171d] text-white border-b border-[#252429]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="/hcb-light.svg" alt="Hack Club Bank" class="h-6" />
+            <span class="text-xs font-mono uppercase tracking-widest text-[#338eda] font-bold">
+              Official Governing Document &middot; ASB Interclub Council
+            </span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight">
+            Hack Club Marina <span class="text-[#338eda]">Constitution</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-white/80 leading-relaxed font-normal max-w-3xl">
+            Official bylaws governing the Hack Club Marina Chapter of Marina High School, establishing membership rights, officer responsibilities, 501(c)(3) fiscal sponsorship under Hack Club Bank (The Hack Foundation, EIN: 81-2908499), and club meeting procedures.
+          </p>
+        </div>
+      </section>
+
+      <!-- Search & Fast Filter Bar -->
+      <section class="py-6 bg-[#1a1a22] border-b border-[#252429] sticky top-0 z-30 shadow-md">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="relative w-full sm:w-80">
+            <svg class="w-4 h-4 text-white/50 absolute left-3 top-1/2 -translate-y-1/2 fill-current" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input
+              id="constitution-search"
+              type="text"
+              placeholder="Search bylaws (e.g. dues, room 252, officers)..."
+              class="w-full pl-9 pr-4 py-2 text-xs sm:text-sm rounded-md bg-[#17171d] text-white placeholder-white/50 border border-[#2d2d38] focus:border-[#338eda] outline-none"
+            />
+          </div>
+
+          <div class="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0 scrollbar-none text-xs">
+            <a href="#preamble" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Preamble</a>
+            <a href="#art1" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. I</a>
+            <a href="#art2" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. II</a>
+            <a href="#art3" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. III</a>
+            <a href="#art4" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. IV</a>
+            <a href="#art5" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. V</a>
+            <a href="#art6" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. VI</a>
+            <a href="#art7" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. VII</a>
+            <a href="#art8" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. VIII</a>
+            <a href="#art9" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. IX</a>
+            <a href="#art10" class="px-2.5 py-1 rounded bg-[#252429] hover:bg-[#32303c] text-white shrink-0">Art. X</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Container -->
+      <section class="py-12 bg-[#17171d] text-white">
+        <div id="articles-list" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+
+          <!-- Preamble -->
+          <article id="preamble" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-3">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Preamble</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              We, the students of Marina High School, in order to foster passion for technology, hands-on computer science, maker culture, and collaborative engineering, do hereby establish this constitution for the Hack Club Marina Chapter.
+            </p>
+          </article>
+
+          <!-- Article I - Name -->
+          <article id="art1" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-3">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article I - Name</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              The name of this organization shall be <strong>Hack Club Marina Chapter</strong>.
+            </p>
+          </article>
+
+          <!-- Article II - Purpose -->
+          <article id="art2" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-3">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article II - Purpose</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              The purpose of this organization shall be to create an inclusive, student-led nonprofit space where students of all skill levels learn to code, collaborate on hands-on software and hardware projects, and access global technical resources, hackathons, and grants under the 501(c)(3) fiscal sponsorship of Hack Club Bank and the support of the main Hack Club organization.
+            </p>
+          </article>
+
+          <!-- Article III - Membership -->
+          <article id="art3" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article III - Membership</h2>
+            </div>
+            <div class="space-y-3 text-xs sm:text-sm text-white/85 leading-relaxed">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#38bdf8] block mb-1">Section I</span>
+                <p>The membership of Hack Club Marina Chapter shall consist of any student enrolled at Marina High School.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#38bdf8] block mb-1">Section II</span>
+                <p>Active members shall attend meetings regularly and participate in club build sessions and projects.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article IV - Officers -->
+          <article id="art4" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-3">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article IV - Officers</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              The officers of Hack Club Marina Chapter shall consist of President, Vice President, Secretary, and Treasurer/Technical Lead.
+            </p>
+          </article>
+
+          <!-- Article V - Duties of Officers -->
+          <article id="art5" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article V - Duties of Officers</h2>
+            </div>
+            <div class="space-y-4 text-xs sm:text-sm text-white/85 leading-relaxed">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#33d6a6] block mb-1">Section I &middot; President</span>
+                <p>The President shall oversee club operations, lead meetings, and serve as the primary contact with school administration and the national Hack Club organization.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#33d6a6] block mb-1">Section II &middot; Vice President</span>
+                <p>The Vice President shall assist in planning workshops, attend meetings regularly, and fulfill the President's duties in their absence.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#33d6a6] block mb-1">Section III &middot; Secretary</span>
+                <p>The Secretary shall record meeting notes, manage member communications, and track project submissions.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#33d6a6] block mb-1">Section IV &middot; Treasurer / Technical Lead</span>
+                <p>The Treasurer/Technical Lead shall manage club accounts, oversee fundraising or hardware requests, and support workshop activities. There shall be multiple roles in specific departments to manage hardware, software, communications, and fundraising.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article VI - Elections -->
+          <article id="art6" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article VI - Elections</h2>
+            </div>
+            <div class="space-y-3 text-xs sm:text-sm text-white/85 leading-relaxed">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#f1c40f] block mb-1">Section I</span>
+                <p>Eligibility for office requires a minimum 2.0 GPA, good standing with school administration, and active participation in club activities.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#f1c40f] block mb-1">Section II</span>
+                <p>Elections will not be conducted; it is on a volunteer basis.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article VII - Finances, Fees, Dues -->
+          <article id="art7" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article VII - Finances, Fees, Dues</h2>
+            </div>
+            <div class="space-y-3 text-xs sm:text-sm text-white/85 leading-relaxed">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#ff8c37] block mb-1">Section I &middot; No Dues</span>
+                <p>Membership dues will NOT be collected. Hack Club Marina Chapter is 100% free for all students.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#ff8c37] block mb-1">Section II &middot; Asset Reversion</span>
+                <p>If Hack Club Marina Chapter becomes inactive or disbands, all assets of the club will revert to the Associated Student Body general account for the Interclub Council.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#ff8c37] block mb-1">Section III &middot; Fiscal Sponsorship</span>
+                <p>Funds to operate Hack Club Marina Chapter shall be raised through approved fundraising activities, ASB allocations, hardware/software grants, and fiscal sponsorship donations. Hack Club Marina operates under the 501(c)(3) fiscal sponsorship of Hack Club Bank (The Hack Foundation, EIN: 81-2908499), ensuring all charitable contributions and grants received are tax-deductible to the fullest extent permitted by law.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article VIII - Activities and Projects -->
+          <article id="art8" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-3">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article VIII - Activities and Projects</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              Hack Club Marina Chapter shall host coding workshops, collaborative build sessions, and project showcases throughout the school year.
+            </p>
+          </article>
+
+          <!-- Article IX - Amendments -->
+          <article id="art9" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-3">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article IX - Amendments</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-white/85 leading-relaxed font-normal">
+              This constitution may be amended by a two-thirds (2/3) majority vote of eligible active members of Hack Club Marina Chapter.
+            </p>
+          </article>
+
+          <!-- Article X - Meetings -->
+          <article id="art10" class="constitution-item p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4">
+            <div class="flex items-center gap-2 pb-2 border-b border-[#2d2d38]">
+              <span class="w-2.5 h-2.5 bg-[#ec3750] inline-block rounded-xs"></span>
+              <h2 class="text-xl sm:text-2xl font-black text-white">Article X - Meetings</h2>
+            </div>
+            <div class="space-y-3 text-xs sm:text-sm text-white/85 leading-relaxed">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#38bdf8] block mb-1">Section I &middot; Regular Meetings</span>
+                <p>Hack Club Marina Chapter will hold regular club meetings on a flexible schedule as announced by officers.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#38bdf8] block mb-1">Section II &middot; Location &amp; Time</span>
+                <p>Meetings will be held during lunch or after school in Room 252 and Lunch on Mondays unless revised.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ratification Footer Card -->
+          <div class="p-6 sm:p-8 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4 shadow-md">
+            <div class="flex items-center gap-3">
+              <img src="/marina-hs-logo.jpg" alt="Marina HS" class="w-10 h-10 rounded-sm" />
+              <div>
+                <h3 class="text-base font-bold text-white">Ratified by Marina High School Student Body &amp; Chapter Officers</h3>
+                <p class="text-xs text-white/70">Interclub Council (ICC) &amp; Hack Club Bank 501(c)(3) Sponsored</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-white/80 border-t border-[#2d2d38]">
+              <div><strong>President:</strong> Yohan Chang (10th Grade)</div>
+              <div><strong>Vice President:</strong> Thien Nguyen (10th Grade)</div>
+              <div><strong>Fiscal Sponsor:</strong> The Hack Foundation (EIN: 81-2908499)</div>
+              <div><strong>Status:</strong> Active &amp; In Good Standing</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#121217] text-white border-t border-[#252429] pt-12 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-[#252429]">
+          
+          <div class="md:col-span-5 space-y-4">
+            <div class="flex items-center gap-3">
+              <img
+                src="/icon-square.svg"
+                alt="Hack Club Marina Logo"
+                class="w-10 h-10 rounded-md object-contain"
+              />
+              <div>
+                <span class="font-black text-xl text-white tracking-tight">HACK CLUB <span class="text-[#ec3750]">MARINA</span></span>
+                <p class="text-xs text-white/80 font-normal">Marina High School Chapter</p>
+              </div>
+            </div>
+            <p class="text-xs text-white/80 leading-relaxed max-w-sm font-normal">
+              Official student chapter of Hack Club at Marina High School. Operating under the 501(c)(3) fiscal sponsorship of Hack Club Bank (The Hack Foundation, EIN: 81-2908499).
+            </p>
+          </div>
+
+          <div class="md:col-span-4 space-y-3">
+            <p class="text-xs font-black uppercase tracking-wider text-[#ff8c37]">
+              Contact &amp; Sessions
+            </p>
+            <ul class="space-y-1.5 text-xs text-white">
+              <li>Text GC: <a href="sms:6575058696" class="text-[#33d6a6] font-mono font-bold hover:underline">657-505-8696</a></li>
+              <li>Email: <a href="mailto:yychang100@student.hbuhsd.edu" class="text-[#338eda] font-mono font-bold hover:underline">yychang100@student.hbuhsd.edu</a></li>
+              <li>Meetings: Room 252 (Mondays Lunch unless revised)</li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3 space-y-3">
+            <p class="text-xs font-black uppercase tracking-wider text-[#ec3750]">
+              Navigation
+            </p>
+            <ul class="space-y-1.5 text-xs font-medium text-white">
+              <li><a href="/" class="hover:text-[#ec3750]">About &amp; Overview</a></li>
+              <li><a href="/hackathons.html" class="hover:text-[#38bdf8]">NASA Space Apps &amp; Hackathons</a></li>
+              <li><a href="/signup.html" class="hover:text-[#33d6a6]">Join Chapter &amp; Group Chat</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-white/80 gap-3">
+          <p>&copy; 2026 Hack Club Marina &middot; 501(c)(3) Nonprofit Fiscal Sponsorship under Hack Club Bank (EIN: 81-2908499).</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Search Script -->
+    <script>
+      const searchInput = document.getElementById('constitution-search');
+      const articles = document.querySelectorAll('.constitution-item');
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          articles.forEach(art => {
+            const text = art.innerText.toLowerCase();
+            if (!query || text.includes(query)) {
+              art.style.display = '';
+            } else {
+              art.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // Mobile Nav Script
+      const mobileToggle = document.getElementById('mobile-nav-toggle');
+      const mobileMenu = document.getElementById('mobile-nav-menu');
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            mobileToggle.setAttribute('aria-expanded', 'true');
+          } else {
+            mobileMenu.classList.add('hidden');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

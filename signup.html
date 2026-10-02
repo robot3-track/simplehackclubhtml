@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <title>Join Hack Club Marina - Sign Up &amp; Group Chat</title>
+    <meta name="description" content="Sign up for Hack Club Marina High School Chapter. 100% free with $0 dues. Get added to the chapter group chat, attend workshops, and claim hardware grants." />
+    <meta property="og:title" content="Join Hack Club Marina - Sign Up &amp; Group Chat" />
+    <meta property="og:description" content="Sign up for Hack Club Marina High School Chapter. 100% free with $0 dues. Get added to the chapter group chat, attend workshops, and claim hardware grants." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#17171d] text-white antialiased selection:bg-[#ec3750] selection:text-white min-h-screen flex flex-col font-sans">
+    
+    <!-- Top-left Hack Club Flag -->
+    <a
+      href="https://hackclub.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="absolute top-0 left-4 sm:left-6 z-50 transition-transform hover:translate-y-1 block focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden"
+      title="Hack Club HQ"
+      aria-label="Hack Club Main HQ"
+    >
+      <img
+        src="/flag-orpheus-top.svg"
+        alt="Hack Club Flag"
+        class="w-20 sm:w-28 md:w-36 drop-shadow-md"
+      />
+    </a>
+
+    <!-- Header Navigation -->
+    <header class="relative z-40 bg-[#17171d] border-b border-[#252429]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pl-24 sm:pl-36 md:pl-44 py-3 sm:py-4 flex items-center justify-between">
+        
+        <!-- Brand Title -->
+        <a href="/" class="flex items-center gap-2.5 sm:gap-3 group focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden">
+          <img
+            src="/icon-square.svg"
+            alt="Hack Club Logo"
+            class="w-7 h-7 sm:w-9 sm:h-9 object-contain group-hover:scale-105 transition-transform"
+          />
+          <div class="flex flex-col">
+            <span class="font-black text-sm sm:text-lg lg:text-xl tracking-tight text-white group-hover:text-[#ec3750] transition-colors leading-none">
+              HACK CLUB <span class="text-[#ec3750]">MARINA</span>
+            </span>
+            <span class="text-xs font-semibold text-white/80 mt-0.5">
+              Marina High School Chapter
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-1.5 lg:gap-3">
+          <a
+            href="/"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors text-white/90 hover:text-[#ec3750] hover:bg-[#252429]/50 focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden"
+          >
+            About
+          </a>
+          <a
+            href="/hackathons.html"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors text-white/90 hover:text-[#38bdf8] hover:bg-[#252429]/50 focus-visible:ring-2 focus-visible:ring-[#38bdf8] focus-visible:outline-hidden"
+          >
+            NASA &amp; Hackathons
+          </a>
+          <a
+            href="/constitution.html"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors text-white/90 hover:text-[#338eda] hover:bg-[#252429]/50 focus-visible:ring-2 focus-visible:ring-[#338eda] focus-visible:outline-hidden"
+          >
+            Constitution
+          </a>
+          <a
+            href="/signup.html"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-extrabold rounded-md transition-colors bg-[#252429] text-white border border-[#33d6a6]/60 focus-visible:ring-2 focus-visible:ring-[#33d6a6] focus-visible:outline-hidden"
+          >
+            Join &amp; Contact
+          </a>
+        </nav>
+
+        <!-- Right Header Actions -->
+        <div class="flex items-center gap-2">
+          <a
+            href="https://hcb.hackclub.com/donations/start/hackclub-marina-chapter"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md font-bold text-xs bg-[#f1c40f]/15 hover:bg-[#f1c40f]/25 text-[#f1c40f] border border-[#f1c40f]/40 transition-all focus-visible:ring-2 focus-visible:ring-[#f1c40f] focus-visible:outline-hidden"
+          >
+            <img src="/hcb-light.svg" alt="HCB" class="h-3.5 w-auto" />
+            <span>Donate</span>
+          </a>
+
+          <a
+            href="sms:6575058696"
+            class="hidden xs:flex px-4 py-2 rounded-md font-black text-xs sm:text-sm bg-[#33d6a6] hover:bg-[#2bbd92] text-[#121217] transition-all shadow-md whitespace-nowrap"
+          >
+            Text 657-505-8696
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button
+            id="mobile-nav-toggle"
+            class="md:hidden p-2 rounded-md bg-[#252429] hover:bg-[#32303c] text-white border border-[#3c4858] transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-[#ec3750] focus-visible:outline-hidden cursor-pointer"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-nav-menu" class="hidden md:hidden border-t border-[#252429] bg-[#1a1a22] px-4 py-4 space-y-2 shadow-2xl">
+        <div class="space-y-1.5">
+          <a href="/" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#252429] text-white hover:bg-[#32303c]">
+            <span>About &amp; Overview</span>
+          </a>
+          <a href="/hackathons.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#252429] text-white hover:bg-[#32303c]">
+            <span>NASA Space Apps &amp; Hackathons</span>
+          </a>
+          <a href="/constitution.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#252429] text-white hover:bg-[#32303c]">
+            <span>Chapter Constitution</span>
+          </a>
+          <a href="/signup.html" class="w-full flex items-center gap-3 px-4 py-3 rounded-md text-sm font-bold bg-[#33d6a6] text-[#121217] font-black shadow-md">
+            <span>Join Chapter &amp; Group Chat</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+
+      <!-- Header Section -->
+      <section class="py-12 sm:py-16 bg-[#17171d] text-white border-b border-[#252429]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#33d6a6]">
+            <span>Fall 2026 Registration</span>
+            <span>&middot;</span>
+            <span>100% Free ($0 Dues)</span>
+            <span>&middot;</span>
+            <span>Room 252</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight">
+            Join <span class="text-[#ec3750]">Hack Club Marina</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-white/80 leading-relaxed font-normal max-w-3xl">
+            Fill out the member registration form below or send a quick text message to our officers. You'll be added to the official chapter group chat, receive workshop invites, and be eligible for free microcontrollers and hardware grants.
+          </p>
+        </div>
+      </section>
+
+      <!-- Fast Contact Bar -->
+      <section class="py-10 bg-[#17171d] text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            
+            <!-- SMS Card -->
+            <div class="p-6 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4 flex flex-col justify-between hover:border-[#ec3750]/50 transition-all">
+              <div class="space-y-3">
+                <span class="text-xs font-bold text-[#ec3750] uppercase tracking-wider block">
+                  Text Group Chat SMS
+                </span>
+                <h3 class="text-3xl sm:text-4xl font-black text-white font-mono">
+                  657-505-8696
+                </h3>
+                <p class="text-xs text-white/80 leading-relaxed font-normal">
+                  Text this phone number with your name and grade to get added directly to the official Hack Club Marina chapter group chat.
+                </p>
+              </div>
+
+              <div class="flex gap-2 pt-3 border-t border-[#2d2d38]">
+                <a
+                  href="sms:6575058696"
+                  class="flex-1 px-4 py-2.5 rounded-md bg-[#ec3750] hover:bg-[#d62b42] text-white font-black text-sm flex items-center justify-center gap-2 transition-all shadow-md"
+                >
+                  <span>Send Text SMS</span>
+                  <span class="font-mono">&rarr;</span>
+                </a>
+                <button
+                  onclick="copyTextToClipboard('657-505-8696', this)"
+                  class="px-4 py-2.5 rounded-md bg-[#252429] hover:bg-[#32303c] text-white font-bold text-sm border border-[#3c4858] transition-colors cursor-pointer"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="p-6 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4 flex flex-col justify-between hover:border-[#338eda]/50 transition-all">
+              <div class="space-y-3">
+                <span class="text-xs font-bold text-[#338eda] uppercase tracking-wider block">
+                  Email Club President
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-white font-mono break-all">
+                  yychang100@student.hbuhsd.edu
+                </h3>
+                <p class="text-xs text-white/80 leading-relaxed font-normal">
+                  Email Club President Yohan Chang for official inquiries, workshop collaborations, or questions about meeting times.
+                </p>
+              </div>
+
+              <div class="flex gap-2 pt-3 border-t border-[#2d2d38]">
+                <a
+                  href="mailto:yychang100@student.hbuhsd.edu"
+                  class="flex-1 px-4 py-2.5 rounded-md bg-[#338eda] hover:bg-[#2b7bbd] text-white font-black text-sm flex items-center justify-center gap-2 transition-all shadow-md"
+                >
+                  <span>Send Email</span>
+                  <span class="font-mono">&rarr;</span>
+                </a>
+                <button
+                  onclick="copyTextToClipboard('yychang100@student.hbuhsd.edu', this)"
+                  class="px-4 py-2.5 rounded-md bg-[#252429] hover:bg-[#32303c] text-white font-bold text-sm border border-[#3c4858] transition-colors cursor-pointer"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Meeting Info Card -->
+          <div class="p-6 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4">
+            <h3 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <span class="w-2.5 h-2.5 bg-[#33d6a6] inline-block rounded-xs"></span>
+              <span>Chapter Meeting Details</span>
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
+              <div class="p-4 rounded-md bg-[#17171d] border border-[#2d2d38] space-y-1">
+                <span class="font-bold text-[#33d6a6] block">Meeting Time</span>
+                <p class="text-white/80">Lunch &amp; After School Sessions</p>
+              </div>
+              <div class="p-4 rounded-md bg-[#17171d] border border-[#2d2d38] space-y-1">
+                <span class="font-bold text-[#ff8c37] block">Location</span>
+                <p class="text-white/80">Room 252 (Mondays Lunch unless revised)</p>
+              </div>
+              <div class="p-4 rounded-md bg-[#17171d] border border-[#2d2d38] space-y-1">
+                <span class="font-bold text-[#38bdf8] block">Membership Dues</span>
+                <p class="text-[#33d6a6] font-extrabold">$0 Dues (100% Free)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Registration Form -->
+          <div class="space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <h2 class="text-2xl font-black text-white">Online Membership Form</h2>
+              <a
+                href="https://forms.gle/oPvfMFuVs8yu46267"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-xs sm:text-sm text-[#ec3750] hover:underline font-bold"
+              >
+                Open Google Form in full tab (forms.gle/oPvfMFuVs8yu46267) &rarr;
+              </a>
+            </div>
+
+            <div class="rounded-md border border-[#2d2d38] overflow-hidden bg-[#1e1e24]">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSe32tFv1nQh8pA1n-z6M5Qk7U4L_0p_4G9M3h2J-1K/viewform?embedded=true"
+                title="Hack Club Marina Membership Form"
+                class="w-full min-h-[750px] sm:min-h-[850px] border-0"
+              >
+                Loading registration form...
+              </iframe>
+            </div>
+
+            <p class="text-center text-xs text-white/70">
+              Direct form link: <a href="https://forms.gle/oPvfMFuVs8yu46267" target="_blank" rel="noopener noreferrer" class="text-[#338eda] underline font-mono">https://forms.gle/oPvfMFuVs8yu46267</a>
+            </p>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="p-6 rounded-md bg-[#1e1e24] border border-[#2d2d38] space-y-4">
+            <h3 class="text-lg font-bold text-white">Frequently Asked Questions</h3>
+            
+            <div class="space-y-3 text-xs sm:text-sm text-white/85">
+              <div>
+                <strong class="text-white block font-bold">Q: Do I need any coding or hardware experience?</strong>
+                <p class="text-white/80">No prior experience is necessary. We have workshops tailored for complete beginners where you will write your first lines of code and build physical circuits.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <strong class="text-white block font-bold">Q: How much does it cost?</strong>
+                <p class="text-white/80">0 dollars. Hack Club Marina operates under the 501(c)(3) fiscal sponsorship of Hack Club Bank (The Hack Foundation, EIN: 81-2908499). All equipment, kits, and resources are provided for free.</p>
+              </div>
+              <div class="pt-2 border-t border-[#2d2d38]">
+                <strong class="text-white block font-bold">Q: What happens if I miss a meeting?</strong>
+                <p class="text-white/80">No problem! All workshop materials, notes, and hackathon updates are posted in our group chat so you can catch up anytime.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#121217] text-white border-t border-[#252429] pt-12 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-[#252429]">
+          
+          <div class="md:col-span-5 space-y-4">
+            <div class="flex items-center gap-3">
+              <img
+                src="/icon-square.svg"
+                alt="Hack Club Marina Logo"
+                class="w-10 h-10 rounded-md object-contain"
+              />
+              <div>
+                <span class="font-black text-xl text-white tracking-tight">HACK CLUB <span class="text-[#ec3750]">MARINA</span></span>
+                <p class="text-xs text-white/80 font-normal">Marina High School Chapter</p>
+              </div>
+            </div>
+            <p class="text-xs text-white/80 leading-relaxed max-w-sm font-normal">
+              Official student chapter of Hack Club at Marina High School. Operating under the 501(c)(3) fiscal sponsorship of Hack Club Bank (The Hack Foundation, EIN: 81-2908499).
+            </p>
+          </div>
+
+          <div class="md:col-span-4 space-y-3">
+            <p class="text-xs font-black uppercase tracking-wider text-[#ff8c37]">
+              Contact &amp; Sessions
+            </p>
+            <ul class="space-y-1.5 text-xs text-white">
+              <li>Text GC: <a href="sms:6575058696" class="text-[#33d6a6] font-mono font-bold hover:underline">657-505-8696</a></li>
+              <li>Email: <a href="mailto:yychang100@student.hbuhsd.edu" class="text-[#338eda] font-mono font-bold hover:underline">yychang100@student.hbuhsd.edu</a></li>
+              <li>Meetings: Room 252 (Mondays Lunch unless revised)</li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3 space-y-3">
+            <p class="text-xs font-black uppercase tracking-wider text-[#ec3750]">
+              Navigation
+            </p>
+            <ul class="space-y-1.5 text-xs font-medium text-white">
+              <li><a href="/" class="hover:text-[#ec3750]">About &amp; Overview</a></li>
+              <li><a href="/hackathons.html" class="hover:text-[#38bdf8]">NASA Space Apps &amp; Hackathons</a></li>
+              <li><a href="/constitution.html" class="hover:text-[#338eda]">Chapter Constitution</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-white/80 gap-3">
+          <p>&copy; 2026 Hack Club Marina &middot; 501(c)(3) Nonprofit Fiscal Sponsorship under Hack Club Bank (EIN: 81-2908499).</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copy Helper & Mobile Nav Script -->
+    <script>
+      function copyTextToClipboard(text, btn) {
+        if (!navigator.clipboard) return;
+        navigator.clipboard.writeText(text).then(() => {
+          const orig = btn.innerText;
+          btn.innerText = 'Copied!';
+          btn.classList.add('text-[#33d6a6]');
+          setTimeout(() => {
+            btn.innerText = orig;
+            btn.classList.remove('text-[#33d6a6]');
+          }, 2000);
+        });
+      }
+
+      const mobileToggle = document.getElementById('mobile-nav-toggle');
+      const mobileMenu = document.getElementById('mobile-nav-menu');
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            mobileToggle.setAttribute('aria-expanded', 'true');
+          } else {
+            mobileMenu.classList.add('hidden');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
