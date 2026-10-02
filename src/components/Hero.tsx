@@ -40,8 +40,8 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
           >
             <div className="space-y-3">
               <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7rem] font-black tracking-tight leading-[0.95] text-white">
-                Where <span className="text-[#3b82f6]">Marina</span> <span className="text-[#f1c40f]">Vikings</span>{' '}
-                <span className="text-[#ec3750]">
+                Where <span className="text-[#3b82f6]">Marina</span> <span className="text-[#f1c40f]">Vikings</span>
+                <span className="text-[#ec3750] ml-3 inline-block">
                   make cool stuff.
                 </span>
               </h1>
@@ -112,11 +112,11 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm text-white/80 pt-1">
                 <div>
-                  <span className="text-[#33d6a6] font-bold">Meetings:</span>{' '}
+                  <span className="text-[#33d6a6] font-bold">Meetings: </span>
                   <span className="text-white font-normal">Lunch & After School</span>
                 </div>
                 <div>
-                  <span className="text-[#ff8c37] font-bold">Location:</span>{' '}
+                  <span className="text-[#ff8c37] font-bold">Location: </span>
                   <span className="text-white font-normal">Room 252 (Mondays Lunch unless revised)</span>
                 </div>
               </div>

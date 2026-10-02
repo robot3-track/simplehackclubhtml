@@ -70,7 +70,7 @@ export const SignupForm: React.FC = () => {
           </iframe>
 
           <div className="text-center text-xs sm:text-sm text-white/80">
-            Direct form link:{' '}
+            Direct form link:
             <a
               href={GOOGLE_FORM_URL}
               target="_blank"
