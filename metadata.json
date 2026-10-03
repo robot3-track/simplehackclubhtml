@@ -1,6 +1,6 @@
 {
   "name": "Simple Hack Club Marina High School Chapter",
-  "description": "Official homepage of Hack Club Marina HS Chapter. Coding workshops, hardware projects, official constitution, leadership team, and student signup.",
+  "description": "Official homepage of Hack Club Marina HS Chapter. NASA Space Apps hackathons, official constitution & bylaws, student leadership, and membership signup.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
